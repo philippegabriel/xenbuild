@@ -8,6 +8,4 @@ install:
   - make compile-microcode
   - sudo make install
   - popd
-script:
-  - make
 

@@ -1,13 +1,11 @@
 sudo: required
 dist: trusty
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get -y build-dep xen
-  - wget http://bits.xensource.com/oss-xen/release/4.5.2/xen-4.5.2.tar.gz
-  - tar -xvf xen-4.5.2.tar.gz 
+  - wget http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/9.2/mit-scheme-9.2-x86-64.tar.gz
+  - tar xzf mit-scheme-9.2-x86-64.tar.gz
 install:
-  - pushd xen-4.5.2/
+  - pushd mit-scheme-9.2/src
   - ./configure
-  - make dist-xen
-  - make dist-tools  
+  - make compile-microcode
+  - sudo make install
   - popd

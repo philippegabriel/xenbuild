@@ -2,6 +2,7 @@ sudo: required
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get -y build-dep xen
+  - sudo apt-get -y install libyajl-dev
   - wget http://bits.xensource.com/oss-xen/release/4.5.2/xen-4.5.2.tar.gz
   - tar -xvf xen-4.5.2.tar.gz 
 install:

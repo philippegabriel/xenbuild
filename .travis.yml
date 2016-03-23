@@ -3,6 +3,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get -y build-dep xen
   - sudo apt-get -y install libyajl-dev
+  - sudo apt-get -y install git
   - sudo apt-get -y install git-core
   - sudo apt-get -y install guilt
   - wget http://bits.xensource.com/oss-xen/release/4.6.1/xen-4.6.1.tar.gz

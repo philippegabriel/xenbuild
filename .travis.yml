@@ -3,10 +3,10 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get -y build-dep xen
   - sudo apt-get -y install libyajl-dev
-  - wget http://bits.xensource.com/oss-xen/release/4.5.2/xen-4.5.2.tar.gz
-  - tar -xvf xen-4.5.2.tar.gz 
+  - wget http://bits.xensource.com/oss-xen/release/4.6.1/xen-4.6.1.tar.gz
+  - tar -xvf xen-4.6.1.tar.gz 
 install:
-  - pushd xen-4.5.2/
+  - pushd xen-4.6.1/
   - ./configure
   - make dist-xen
   - make dist-tools  
